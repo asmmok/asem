@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    color: white;
+    align-content: center;
+    
+    background-color: rgb(221, 152, 152);
+    animation: mymove 5s infinite;
+  }
+  .header{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 70px;
+      
+    font-size: 20px;
+    margin-bottom: 0px;
+    height: 50px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .header a{
+    color: white;
+    text-decoration: none;
+  }
+  .header a:hover {
+    color: rgb(73, 46, 46);
+  }
+  #main{
+      margin-top: 200px;
+      margin-bottom: 200px;
+      font-family: 'Frank Ruhl Libre', serif;
+  }
+  #main h1{
+      font-size: 100px;
+      margin-bottom: 0%;
+  }
+  #main p{
+    font-size: 20px;
+}
+  
+  @keyframes mymove {
+    50% {background-color: #a79da6;}
+
+    
+    50% {background-color: rgb(127, 211, 186);}
+  }
+  .marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+}
+
+
+.marquee span {
+    font-size: 10vw;
+    padding: 0 2vw;
+}
+
+.marquee:hover .marquee__inner  {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+  
+}
+
+#aboutMe img{
+    width: 500px;
+    height: 500px;
+    
+}
+.container {
+    width: 100%;
+ margin-bottom: 500px;
+   
+}
+
+#contactUs{
+    margin-top: 100px;
+    
+}
+#r{
+    background-image: url(https://padletuploads.blob.core.windows.net/prod/195809177/bcc91c2f23d96d694ddff44381e14494/Leaf_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
